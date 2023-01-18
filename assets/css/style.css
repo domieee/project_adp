@@ -1,0 +1,228 @@
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transform: translate3d(-10);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    transform: translate3d(-20);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(../../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: roboto-medium;
+  src: url(../../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url(../../fonts/Roboto-Regular.ttf);
+}
+h1 {
+  line-height: 57px;
+  font-size: 3.5rem;
+  font-family: roboto-bold, sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: roboto-medium, sans-serif;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: roboto-medium, sans-serif;
+}
+
+.paragraph-primary {
+  font-size: 1.2rem;
+  font-family: roboto-medium, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section:not(.frontpage) {
+  margin-inline: 100px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+  display: flex;
+}
+header .frontpage {
+  margin-left: 25px;
+}
+header .img-1 {
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 1;
+  right: 0;
+}
+header .img-2 {
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 2;
+  top: 0;
+  right: 0;
+}
+header .frontpage {
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  margin-left: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .frontpage article {
+  display: flex;
+  flex-direction: column;
+}
+header .frontpage article h1 {
+  margin-bottom: 25px;
+}
+header .frontpage article p {
+  margin-bottom: 100px;
+}
+header .frontpage article a {
+  text-decoration: none;
+  font-family: roboto-medium, sans-serif;
+  color: #ff3571;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+header .frontpage .img-1 {
+  background-image: url(../img/ilustracion1.png);
+}
+header .frontpage .img-2 {
+  background-image: url(../img/ilustracion_people.png);
+  animation: pulsate-bck 5s infinite;
+}
+
+img {
+  margin: 1rem 3rem 0;
+  height: 3rem;
+  width: 3rem;
+}
+
+.a-wrap {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 80px;
+  flex-direction: column;
+}
+.a-wrap #dev-project,
+.a-wrap #name {
+  font-family: roboto-bold, sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+.a-wrap #dev-project {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+footer {
+  position: relative;
+}
+
+.image-bg {
+  height: 100vh;
+  background-image: url(../img/images.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.section-idea {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-idea h2 {
+  margin-top: -320px;
+  margin-right: 100px;
+}
+.section-idea p {
+  width: 25%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: roboto-medium, sans-serif;
+}
+
+.section-col-reverse h2 {
+  width: 50%;
+}
+.section-col-reverse .container-flex-flow {
+  display: grid;
+  justify-content: center;
+  gap: 100px;
+  grid-template: "a b" "c d";
+}
+.section-col-reverse .container-flex-flow .col-reverse-items {
+  max-width: 300px;
+}
+.section-col-reverse .container-flex-flow .col-reverse-items .row-container {
+  display: flex;
+  align-items: center;
+}
+.section-col-reverse .container-flex-flow .col-reverse-items p {
+  margin-left: 145px;
+  font-size: 1.2rem;
+  font-family: roboto-medium, sans-serif;
+}
+.section-col-reverse .container-flex-flow #grid1 {
+  grid-area: a;
+}
+.section-col-reverse .container-flex-flow #grid2 {
+  grid-area: b;
+}
+.section-col-reverse .container-flex-flow #grid3 {
+  grid-area: c;
+}
+.section-col-reverse .container-flex-flow #grid4 {
+  grid-area: d;
+}
+
+/*# sourceMappingURL=style.css.map */

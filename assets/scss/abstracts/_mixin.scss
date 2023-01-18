@@ -1,0 +1,77 @@
+@mixin h1 {
+    line-height: 57px;
+    font-size: $font-size-h1;
+    font-family: $font-primary-bold;
+}
+
+@mixin h2 {
+    font-size: $font-size-h2;
+    font-family: $font-primary-medium;
+}
+
+@mixin h3 {
+    font-size: $font-size-h3;
+    font-family: $font-primary-medium;
+}
+
+@mixin anchor-scroll {
+    text-decoration: none;
+    font-family: $font-primary-medium;
+    color: $color-red;
+    font-size: $font-size-h3;
+    font-weight: 600;
+}
+
+@mixin p-primary {
+    font-size: $font-size-h3;
+    font-family: $font-primary-medium;
+}
+
+@mixin p-secondary {
+    font-size: $font-size-h3;
+    font-family: $font-primary-medium;
+}
+
+@mixin bg-propertys-1 {
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    right: 0;
+}
+
+@mixin bg-propertys-2 {
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 2;
+    top: 0;
+    right: 0;
+}
+
+@mixin anchor-header {
+    font-family: $font-primary-bold;
+    text-decoration: none;
+    color: $color-black;
+}
+
+@mixin flex-col-align-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin animation {
+    -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+    animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+
+@mixin icon {
+    height: 3rem;
+    width: 3rem;
+}

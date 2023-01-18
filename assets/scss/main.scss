@@ -1,0 +1,83 @@
+// ABSTRACTS
+@import "./abstracts/_animations.scss";
+@import "./abstracts/_font-faces.scss";
+@import "./abstracts/_mixin.scss";
+@import "./abstracts/_variables.scss";
+// BASE
+@import "./base/_typography.scss";
+@import "./base/_reset.scss";
+// LAYOUT
+@import "./layout/_header.scss";
+@import "./layout/_footer.scss";
+
+.image-bg {
+    height: 100vh;
+    background-image: url(../img/images.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.section-idea {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        margin-top: -320px;
+        margin-right: $margin-100px;
+    }
+
+    p {
+        width: 25%;
+        text-align: left;
+        @include p-secondary;
+    }
+}
+
+.section-col-reverse {
+    h2 {
+        width: 50%;
+    }
+
+    .container-flex-flow {
+        display: grid;
+        justify-content: center;
+        gap: 100px;
+        grid-template:
+            "a b"
+            "c d";
+
+        .col-reverse-items {
+            max-width: 300px;
+
+            .row-container {
+                display: flex;
+                align-items: center;
+            }
+
+            p {
+                margin-left: 145px;
+                @include p-secondary;
+            }
+        }
+        #grid1 {
+            grid-area: a;
+        }
+
+        #grid2 {
+            grid-area: b;  
+        }
+
+        #grid3 {
+            grid-area: c;
+        }
+
+        #grid4 {
+            grid-area: d;
+            
+        }
+    }
+}
