@@ -9,7 +9,7 @@ html {
 }
 
 section:not(.frontpage) {
-    padding-inline: $margin-100px;
+    padding-inline: (2*$margin-100px);
 }
 
 a:hover {

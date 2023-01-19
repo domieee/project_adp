@@ -41,7 +41,7 @@ document.getElementById("")
 
 function party() {
 
-    let element = document.querySelector('#subscribe-button-red')
+let element = document.querySelector('.subscribe')
 
 let { top, bottom, left, right } = element.getBoundingClientRect()
     confetti({
@@ -51,3 +51,23 @@ let { top, bottom, left, right } = element.getBoundingClientRect()
         }
     });
 }
+
+confetti.setCount(75);
+confetti.setSize(1);
+confetti.setPower(25);
+confetti.setFade(false);
+confetti.destroyTarget(true); 
+
+function changeDOMElements() {
+    const classToAppend = document.getElementById("subscribe");
+    document.getElementById("challenge").innerHTML = "Your Email has been confimed"
+    let subheading = document.createElement("h1");
+    let textNode = document.createTextNode("Your Email");
+    subheading.appendChild(textNode);
+    classToAppend.appendChild(subheading);
+    
+}
+
+document.querySelector("#subscribe-button-red").addEventListener('click', changeDOMElements);
+
+

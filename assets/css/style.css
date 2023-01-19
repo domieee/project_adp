@@ -88,7 +88,7 @@ html {
 }
 
 section:not(.frontpage) {
-  padding-inline: 100px;
+  padding-inline: 200px;
 }
 
 a:hover {
@@ -349,10 +349,18 @@ footer {
   font-family: roboto-medium, sans-serif;
 }
 .subscribe input {
-  margin-bottom: 10px;
-}
-.subscribe ::placeholder {
   text-align: center;
+  font-family: roboto-bold, sans-serif;
+  font-weight: 600;
+  width: 25%;
+  height: 40px;
+  margin-bottom: 25px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.subscribe input ::placeholder {
+  text-align: center;
+  font-family: roboto-regular, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
