@@ -31,16 +31,8 @@ function attachment() {
     const attachment = document.getElementById("image-bg");
     console.log(heigth);
     if (heigth > 880) {
-        console.log("hallo welt");
         attachment.style.backgroundAttachment = "scroll";
     } else {
         attachment.style.backgroundAttachment = "fixed";
     }
 }
-
-// const attachment = document.getElementsByClassName("image-bg");
-//     let scrollheight = attachment.scrollTop;
-
-//     if (document.documentElement.scrollTop > 500) {
-//         console.log("hi");
-//     }
