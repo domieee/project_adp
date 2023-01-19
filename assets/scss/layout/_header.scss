@@ -1,6 +1,41 @@
 header {
     position: relative;
-    display: flex;
+
+    nav {
+        position: absolute;
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        z-index: 3;
+        // background-color: beige;
+
+        .a-wrap {
+            display: flex;
+            height: 80px;
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center
+            }
+            #dev-project,
+            #name {
+                @include anchor-header;
+        
+            }
+            #dev-project {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+
+        a {
+            background-color: $color-white;
+            color: $color-blue;
+            margin-inline: auto 2rem;
+            border-radius: 5px;
+        }
+    }
 
     .frontpage {
         margin-left: $margin-25px;
@@ -19,8 +54,9 @@ header {
         width: 100%;
         position: relative;
         height: 100vh;
-        margin-left: -200px;
+
         article {
+            margin-left: (2*$margin-100px);
             display: flex;
             flex-direction: column;
 
@@ -55,20 +91,3 @@ img {
     @include icon;
 }
 
-.a-wrap {
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    height: 80px;
-    flex-direction: column;
-
-    #dev-project,
-    #name {
-        @include anchor-header;
-
-    }
-    #dev-project {
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-}

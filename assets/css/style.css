@@ -28,6 +28,22 @@
     transform: scale(1);
   }
 }
+.pa-fixed-header {
+  background-color: #ffffff !important;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.svg-scroll {
+  border-radius: 100%;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
 @font-face {
   font-family: roboto-bold;
   src: url(../../fonts/Roboto-Bold.ttf);
@@ -77,7 +93,39 @@ a:hover {
 
 header {
   position: relative;
+}
+header nav {
+  position: absolute;
+  position: fixed;
+  width: 100vw;
   display: flex;
+  align-items: center;
+  z-index: 3;
+}
+header nav .a-wrap {
+  display: flex;
+  height: 80px;
+}
+header nav .a-wrap div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header nav .a-wrap #dev-project,
+header nav .a-wrap #name {
+  font-family: roboto-bold, sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+header nav .a-wrap #dev-project {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+header nav a {
+  background-color: #FFF;
+  color: #3C30FF;
+  margin-inline: auto 2rem;
+  border-radius: 5px;
 }
 header .frontpage {
   margin-left: 25px;
@@ -107,12 +155,12 @@ header .frontpage {
   width: 100%;
   position: relative;
   height: 100vh;
-  margin-left: -200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 header .frontpage article {
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
 }
@@ -141,24 +189,6 @@ img {
   margin: 1rem 3rem 0;
   height: 3rem;
   width: 3rem;
-}
-
-.a-wrap {
-  display: flex;
-  justify-content: center;
-  width: 400px;
-  height: 80px;
-  flex-direction: column;
-}
-.a-wrap #dev-project,
-.a-wrap #name {
-  font-family: roboto-bold, sans-serif;
-  text-decoration: none;
-  color: #000;
-}
-.a-wrap #dev-project {
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 
 footer {
@@ -191,6 +221,9 @@ footer {
   font-family: roboto-medium, sans-serif;
 }
 
+.section-col-reverse {
+  position: sticky;
+}
 .section-col-reverse h2 {
   width: 50%;
 }
