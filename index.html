@@ -37,7 +37,7 @@
                 <h1>How to become<br \>a better designer?</h1>
                 <p class="paragraph-primary">A challenge to improve your product design skills by solving<br>problems in
                     your daily life. 🚀</p>
-                <a href="#">Scroll to see more</a>
+                <a href="#section-idea">Scroll to see more</a>
             </article>
         </section>
     </header>
@@ -46,7 +46,7 @@
         <section class="image-bg">
         </section>
 
-        <section class="section-idea">
+        <section class="section-idea" id="section-idea">
             <h2>Every idea💡<br \>starts with a need</h2>
             <p>Earlier this year (January 2018). I started to think about how I could improve my design skills and
                 attract more customers. I wanted to start designing some ideas that for a long time I had only on paper
@@ -103,41 +103,60 @@
             <p>The challenge lasts 30 days. On each of those days you will have to create a solution to any problem you
                 yourself are facing and show the result to the community.</p>
             <article class="article-flex-flow">
-                <div class="img-container"></div>
-                <p class="number-grey">01</p>
-                <p>👀</p>
-                <h3>Find your Problem</h3>
-                <p>It has to be a problem that’s personally affecting or affected you, like finding your keys, calling a
-                    taxi or even remembering something. Open your eyes, look around you carefully and pay close
-                    attention to your surroundings.</p>
+                <div class="img-container">
+                    <img src="./assets/img/step01.png" alt="">
+                </div>
+                <div class="article-container">
+                    <p class="number-grey">01</p>
+                    <p class="emote">👀</p>
+                    <h3 class="h3-heading">Find your Problem</h3>
+                    <p>It has to be a problem that’s personally affecting or affected you, like finding your keys,
+                        calling a
+                        taxi or even remembering something. Open your eyes, look around you carefully and pay close
+                        attention to your surroundings.</p>
+                </div>
+            </article>
+
+            <article class="article-flex-flow" id="reverse">
+                <div class="img-container">
+                    <img src="./assets/img/step02.png" alt="">
+                </div>
+                <div class="article-container">
+                    <p class="number-grey">02</p>
+                    <p class="emote">✍️</p>
+                    <h3 class="h3-heading">Think about the solution</h3>
+                    <p>It's time to look for solutions. What can you do to solve these problems? It's time to think out
+                        of
+                        the box, grab your notebook and start writing down all the ideas that come to mind.</p>
+                </div>
             </article>
 
             <article class="article-flex-flow">
-                <p class="number-grey"></p>
-                <p>✍️</p>
-                <h3>Think about the solution</h3>
-                <p>It's time to look for solutions. What can you do to solve these problems? It's time to think out of
-                    the box, grab your notebook and start writing down all the ideas that come to mind.</p>
-                <div class="img-container"></div>
+                <div class="img-container">
+                    <img src="./assets/img/step03.png" alt="">
+                </div>
+                <div class="article-container">
+                    <p class="number-grey">03</p>
+                    <p class="emote">👨‍💻</p>
+                    <h3 class="h3-heading">Design your proposal</h3>
+                    <p>How can design help solve your problem? It's time to think about features and functionality, and
+                        then
+                        start designing. Don’t forget to always ask yourself: Would I actually use this?</p>
+                </div>
             </article>
 
-            <article class="article-flex-flow">
-                <div class="img-container"></div>
-                <p class="number-grey"></p>
-                <p>👨‍💻</p>
-                <h3>Design your proposal</h3>
-                <p>How can design help solve your problem? It's time to think about features and functionality, and then
-                    start designing. Don’t forget to always ask yourself: Would I actually use this?</p>
-            </article>
-
-            <article class="article-flex-flow">
-                <p class="number-grey"></p>
-                <p>🏄</p>
-                <h3>Share your work</h3>
-                <p>Share your design on instagram or dribbble with the hashtag #thedesignproject Remember to explain
-                    what the problem was, how you came up with the solution and how the design achieves it. Find out
-                    what people have to say about it.</p>
-                <div class="img-container"></div>
+            <article class="article-flex-flow" id="reverse">
+                <div class="img-container">
+                    <img src="./assets/img/step04.png" alt="">
+                </div>
+                <div class="article-container">
+                    <p class="number-grey">04</p>
+                    <p class="emote">🏄</p>
+                    <h3 class="h3-heading">Share your work</h3>
+                    <p>Share your design on instagram or dribbble with the hashtag #thedesignproject Remember to explain
+                        what the problem was, how you came up with the solution and how the design achieves it. Find out
+                        what people have to say about it.</p>
+                </div>
             </article>
         </section>
 
@@ -147,7 +166,7 @@
             <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
             <div class="subscribe-buttons-wrap">
                 <button class="subscribe-button-white">Write your email here</button>
-                <button class="subscribe-button-red">Subscribe</button>
+                <button class="subscribe-button-red" onclick="confetti()">Subscribe</button>
             </div>
         </section>
     </main>
@@ -155,6 +174,7 @@
         <p>Created with Love by a Webdesigner ❤️</p>
     </footer>
 
+    <script src="https://unpkg.com/canvas-confetti@1.5.1/dist/confetti.browser.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section:not(.frontpage) {
     margin-inline: $margin-100px;
 }

@@ -1,5 +1,5 @@
 @mixin h1 {
-    line-height: 57px;
+    line-height: 70px;
     font-size: $font-size-h1;
     font-family: $font-primary-bold;
 }
@@ -28,6 +28,7 @@
 }
 
 @mixin p-secondary {
+    line-height: 30px;
     font-size: $font-size-h3;
     font-family: $font-primary-medium;
 }
@@ -74,4 +75,11 @@
 @mixin icon {
     height: 3rem;
     width: 3rem;
+}
+
+@mixin number {
+    margin-bottom: $margin-50px;
+    font-size: $font-size-h1;
+    font-family: $font-primary-bold;
+    color: $color-grey;
 }

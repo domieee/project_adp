@@ -57,8 +57,8 @@
   src: url(../../fonts/Roboto-Regular.ttf);
 }
 h1 {
-  line-height: 57px;
-  font-size: 3.5rem;
+  line-height: 70px;
+  font-size: 4.4rem;
   font-family: roboto-bold, sans-serif;
 }
 
@@ -81,6 +81,10 @@ h3 {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 section:not(.frontpage) {
@@ -121,7 +125,7 @@ header nav .a-wrap #dev-project {
   font-size: 1.5rem;
   font-weight: 600;
 }
-header nav a {
+header nav a:not(#name) {
   background-color: #FFF;
   color: #3C30FF;
   margin-inline: auto 2rem;
@@ -211,30 +215,35 @@ footer {
   justify-content: center;
 }
 .section-idea h2 {
-  margin-top: -320px;
   margin-right: 100px;
 }
 .section-idea p {
   width: 25%;
   text-align: left;
+  line-height: 30px;
   font-size: 1.2rem;
   font-family: roboto-medium, sans-serif;
 }
 
 .section-col-reverse {
-  position: sticky;
+  margin-bottom: 200px;
 }
 .section-col-reverse h2 {
   width: 50%;
+  margin-bottom: 100px;
+}
+.section-col-reverse .col-revers-items {
+  max-width: 400px;
+  width: 100%;
 }
 .section-col-reverse .container-flex-flow {
   display: grid;
   justify-content: center;
-  gap: 100px;
+  gap: 50px 200px;
   grid-template: "a b" "c d";
 }
 .section-col-reverse .container-flex-flow .col-reverse-items {
-  max-width: 300px;
+  max-width: 420px;
 }
 .section-col-reverse .container-flex-flow .col-reverse-items .row-container {
   display: flex;
@@ -242,6 +251,7 @@ footer {
 }
 .section-col-reverse .container-flex-flow .col-reverse-items p {
   margin-left: 145px;
+  line-height: 30px;
   font-size: 1.2rem;
   font-family: roboto-medium, sans-serif;
 }
@@ -256,6 +266,69 @@ footer {
 }
 .section-col-reverse .container-flex-flow #grid4 {
   grid-area: d;
+}
+
+.section-ready {
+  display: flex;
+  flex-direction: column;
+}
+.section-ready h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.section-ready > p {
+  font-size: 1.2rem;
+  font-family: roboto-medium, sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-ready .article-flex-flow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.section-ready .article-flex-flow .number-grey {
+  margin-bottom: 50px;
+  font-size: 4.4rem;
+  font-family: roboto-bold, sans-serif;
+  color: #dddddd;
+}
+.section-ready .article-flex-flow .img-container {
+  margin-right: 100px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 500px;
+}
+.section-ready .article-flex-flow .img-container img {
+  width: 100%;
+  height: auto;
+}
+.section-ready .article-flex-flow .article-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-ready .article-flex-flow .article-container > p:not(.number-grey) {
+  line-height: 30px;
+  font-size: 1.2rem;
+  font-family: roboto-medium, sans-serif;
+}
+.section-ready .article-flex-flow .article-container .emote {
+  margin-bottom: 10px;
+}
+.section-ready .article-flex-flow .article-container .h3-heading {
+  margin-bottom: 25px;
+}
+
+#reverse {
+  flex-direction: row-reverse;
+}
+#reverse > .article-container {
+  align-items: flex-end;
+}
+#reverse p {
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

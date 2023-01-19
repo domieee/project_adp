@@ -29,7 +29,7 @@ header {
             }
         }
 
-        a {
+        a:not(#name) {
             background-color: $color-white;
             color: $color-blue;
             margin-inline: auto 2rem;
