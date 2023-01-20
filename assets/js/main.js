@@ -52,22 +52,25 @@ let { top, bottom, left, right } = element.getBoundingClientRect()
     });
 }
 
-confetti.setCount(75);
-confetti.setSize(1);
-confetti.setPower(25);
-confetti.setFade(false);
-confetti.destroyTarget(true); 
 
 function changeDOMElements() {
-    const classToAppend = document.getElementById("subscribe");
-    document.getElementById("challenge").innerHTML = "Your Email has been confimed"
-    let subheading = document.createElement("h1");
-    let textNode = document.createTextNode("Your Email");
-    subheading.appendChild(textNode);
-    classToAppend.appendChild(subheading);
+    const email = document.getElementById('mail');
+    console.log(email.value);
     
 }
 
-document.querySelector("#subscribe-button-red").addEventListener('click', changeDOMElements);
+function changeDOMcolors() {
+    let body = document.querySelector("body");
 
+    let state = 0;
+    if (state == 0) {
+        body.style.backgroundColor = '#fff';
+        state++;
+    } else {
+        body.style.backgroundColor = 'blue'
+    }
+}
+
+document.querySelector("#subscribe-button-red").addEventListener('click', changeDOMElements);
+document.getElementById("bulb").addEventListener('click', changeDOMcolors);
 

@@ -1,3 +1,8 @@
 footer {
     position: relative;
+
+}
+
+p {
+    @include p-primary;
 }

@@ -45,7 +45,6 @@
     }
 
     .col-revers-items {
-
         max-width: 400px;
         width: 100%;
     }
@@ -138,7 +137,7 @@
             flex-direction: column;
             justify-content: center;
 
-            >p:not(.number-grey) {
+            > p:not(.number-grey) {
                 @include p-secondary;
             }
 
@@ -155,6 +154,7 @@
 
 #reverse {
     flex-direction: row-reverse;
+
     >.article-container {
         align-items: flex-end;
     }
@@ -167,6 +167,10 @@
 .subscribe {
 
     margin-bottom: $margin-100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     > h2 {
         margin-bottom: $margin-10px;
@@ -176,10 +180,6 @@
         margin-bottom: $margin-25px;
         @include p-primary;
     }
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
     input {
         text-align: center;
@@ -191,15 +191,10 @@
         border: none;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 
-        
         ::placeholder {
             text-align: center;
             font-family: $font-primary-regular
         }
     }
-
-        
-
-
 }
 
