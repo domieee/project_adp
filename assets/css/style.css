@@ -68,12 +68,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: roboto-medium, sans-serif;
 }
 
 .paragraph-primary {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: roboto-medium, sans-serif;
 }
 
@@ -177,7 +177,7 @@ header .frontpage article a {
   text-decoration: none;
   font-family: roboto-medium, sans-serif;
   color: #ff3571;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 header .frontpage .img-1 {
@@ -199,7 +199,7 @@ footer {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: roboto-medium, sans-serif;
 }
 
@@ -225,7 +225,7 @@ p {
   width: 25%;
   text-align: left;
   line-height: 30px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: roboto-medium, sans-serif;
 }
 
@@ -236,10 +236,6 @@ p {
   width: 50%;
   margin-bottom: 100px;
 }
-.section-col-reverse .col-revers-items {
-  max-width: 400px;
-  width: 100%;
-}
 .section-col-reverse .container-flex-flow {
   display: grid;
   justify-content: center;
@@ -247,7 +243,7 @@ p {
   grid-template: "a b" "c d";
 }
 .section-col-reverse .container-flex-flow .col-reverse-items {
-  max-width: 420px;
+  max-width: 480px;
 }
 .section-col-reverse .container-flex-flow .col-reverse-items .row-container {
   display: flex;
@@ -256,7 +252,7 @@ p {
 .section-col-reverse .container-flex-flow .col-reverse-items p {
   margin-left: 145px;
   line-height: 30px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: roboto-medium, sans-serif;
 }
 .section-col-reverse .container-flex-flow #grid1 {
@@ -283,7 +279,7 @@ p {
   margin-bottom: 25px;
 }
 .section-ready > p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: roboto-medium, sans-serif;
   text-align: center;
   width: 50%;
@@ -318,7 +314,7 @@ p {
 }
 .section-ready .article-flex-flow .article-container > p:not(.number-grey) {
   line-height: 30px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: roboto-medium, sans-serif;
 }
 .section-ready .article-flex-flow .article-container .emote {
@@ -350,7 +346,7 @@ p {
 }
 .subscribe > p {
   margin-bottom: 25px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: roboto-medium, sans-serif;
 }
 .subscribe input {

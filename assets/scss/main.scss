@@ -44,10 +44,7 @@
         margin-bottom: $margin-100px;
     }
 
-    .col-revers-items {
-        max-width: 400px;
-        width: 100%;
-    }
+
 
     .container-flex-flow {
         display: grid;
@@ -58,7 +55,7 @@
             "c d";
 
         .col-reverse-items {
-            max-width: 420px;
+            max-width: 480px;
 
             .row-container {
                 display: flex;

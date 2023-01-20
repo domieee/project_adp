@@ -23,13 +23,13 @@
 }
 
 @mixin p-primary {
-    font-size: $font-size-h3;
+    font-size: $font-size-p-primary;
     font-family: $font-primary-medium;
 }
 
 @mixin p-secondary {
     line-height: 30px;
-    font-size: $font-size-h3;
+    font-size: $font-size-p-secondary;
     font-family: $font-primary-medium;
 }
 
