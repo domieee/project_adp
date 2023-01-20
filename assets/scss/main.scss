@@ -196,5 +196,16 @@
             font-family: $font-primary-regular
         }
     }
+    #subscribe-button-red {
+        border: 0;
+        border-radius: 10px;
+        font-family: $font-primary-bold;
+        font-weight: 600;
+        color: $color-white;
+        background-color: $color-red;
+        padding: 10px 40px;
+        cursor: pointer;
+
+    }
 }
 
