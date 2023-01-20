@@ -68,12 +68,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: roboto-medium, sans-serif;
 }
 
 .paragraph-primary {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: roboto-medium, sans-serif;
 }
 
@@ -177,7 +177,7 @@ header .frontpage article a {
   text-decoration: none;
   font-family: roboto-medium, sans-serif;
   color: #ff3571;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 header .frontpage .img-1 {
@@ -199,7 +199,7 @@ footer {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: roboto-medium, sans-serif;
 }
 
@@ -279,7 +279,7 @@ p {
   margin-bottom: 25px;
 }
 .section-ready > p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: roboto-medium, sans-serif;
   text-align: center;
   width: 50%;
@@ -346,7 +346,7 @@ p {
 }
 .subscribe > p {
   margin-bottom: 25px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: roboto-medium, sans-serif;
 }
 .subscribe input {
