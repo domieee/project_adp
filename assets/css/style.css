@@ -196,6 +196,8 @@ img {
 
 footer {
   position: relative;
+  padding-bottom: 5px;
+  padding-left: 5px;
 }
 
 p {
@@ -297,6 +299,7 @@ p {
   color: #dddddd;
 }
 .section-ready .article-flex-flow .img-container {
+  background-color: non;
   margin-right: 100px;
   max-width: 500px;
   width: 100%;
@@ -390,7 +393,7 @@ p {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .congratulation .congratulations-container .pParty {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 .congratulation .congratulations-container .confimedMail,
 .congratulation .congratulations-container .thanks {

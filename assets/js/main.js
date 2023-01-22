@@ -28,7 +28,9 @@ scrollNavbar = () => {
 function attachment() {
     let heigth = window.pageYOffset;
     const attachment = document.getElementById("image-bg");
+
     console.log(heigth);
+
     if (heigth > 880) {
         attachment.style.backgroundAttachment = "scroll";
     } else {
@@ -54,30 +56,28 @@ function changeDOMElements() {
     const subscribe = document.querySelector('.subscribe');
     const contratulation = document.querySelector('.congratulation');
     const margin = document.querySelector('.section-ready');
+
     let stateDOM = 0;
     if (stateDOM == 0) {
         subscribe.style.display = 'none';
         contratulation.style.display = 'flex';
+        margin.style.marginBottom = '10px';
         stateDOM = 1;
     } else { 
         subscribe.style.display = 'flex';
         contratulation.style.display = 'none';
+
         stateDOM = 0;
     };
 
-    margin.style.marginBottom = '10px';
+
+
+
 }
 
-function changeDOMcolors() {
-    let body = document.querySelector("body");
-
-    let state = 0;
-    if (state == 0) {
-        body.style.backgroundColor = '#fff';
-        state++;
-    } else {
-        body.style.backgroundColor = 'blue'
-    }
+function clg() {
+    const mail = document.querySelector('#mail');
+    clg(mail.value);
 }
 
 document.querySelector("#subscribe-button-red").addEventListener('click', changeDOMElements);
