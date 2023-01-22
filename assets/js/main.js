@@ -39,7 +39,7 @@ function attachment() {
 }
 
 function party() {
-    let element = document.querySelector('.subscribe');
+    let element = document.querySelector('#subscribe-button-red');
     let { top, bottom, left, right } = element.getBoundingClientRect();
 
     confetti({
@@ -51,6 +51,11 @@ function party() {
 
     changeDOMElements();
 }
+
+// function clg() {
+//     const mail = document.getElementById('#mail');
+//     clg(mail.value);
+// }
 
 function changeDOMElements() {
     const subscribe = document.querySelector('.subscribe');
@@ -69,15 +74,6 @@ function changeDOMElements() {
 
         stateDOM = 0;
     };
-
-
-
-
-}
-
-function clg() {
-    const mail = document.querySelector('#mail');
-    clg(mail.value);
 }
 
 document.querySelector("#subscribe-button-red").addEventListener('click', changeDOMElements);
