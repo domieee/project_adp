@@ -335,11 +335,11 @@ p {
 }
 
 .subscribe {
-  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 .subscribe > h2 {
   margin-bottom: 10px;
@@ -372,6 +372,45 @@ p {
   background-color: #ff3571;
   padding: 10px 40px;
   cursor: pointer;
+}
+
+.congratulation {
+  display: none;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.congratulation .congratulations-container {
+  padding: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.congratulation .congratulations-container .pParty {
+  margin-bottom: 10px;
+}
+.congratulation .congratulations-container .confimedMail,
+.congratulation .congratulations-container .thanks {
+  margin-bottom: 10px;
+  font-family: roboto-bold, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.congratulation .congratulations-container .subtext {
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+.congratulation .congratulations-container .backto {
+  font-family: roboto-bold, sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #3C30FF;
+  color: #FFF;
+  padding: 10px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -92,12 +92,13 @@
     flex-direction: column;
     margin-bottom: $margin-100px;
     align-items: center;
+
     h2 {
         text-align: center;
         margin-bottom: $margin-25px;
     }
 
-    > p {
+    >p {
         @include p-primary;
         text-align: center;
         width: 50%;
@@ -112,8 +113,6 @@
         .number-grey {
             @include number;
         }
-
-
 
         .img-container {
             margin-right: $margin-100px;
@@ -134,7 +133,7 @@
             flex-direction: column;
             justify-content: center;
 
-            > p:not(.number-grey) {
+            >p:not(.number-grey) {
                 @include p-secondary;
             }
 
@@ -162,18 +161,17 @@
 }
 
 .subscribe {
-
-    margin-bottom: $margin-100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 100px;
 
-    > h2 {
+    >h2 {
         margin-bottom: $margin-10px;
     }
 
-    > p {
+    >p {
         margin-bottom: $margin-25px;
         @include p-primary;
     }
@@ -193,6 +191,7 @@
             font-family: $font-primary-regular
         }
     }
+
     #subscribe-button-red {
         border: 0;
         border-radius: 10px;
@@ -205,3 +204,42 @@
     }
 }
 
+.congratulation {
+    display: none;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .congratulations-container {
+        padding: 50px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        .pParty {
+            margin-bottom: $margin-10px;
+        }
+
+        .confimedMail,
+        .thanks {
+            @include congrats;
+        }
+
+        .subtext {
+            @include subtext;
+        }
+
+        .backto {
+            @include button-back-font;
+            border-radius: 10px;
+            text-decoration: none;
+            background-color: $color-blue;
+            color: $color-white;
+            padding: 10px 30px;
+        }
+    }
+
+}

@@ -36,27 +36,36 @@ function attachment() {
     }
 }
 
-document.getElementById("")
-
-
 function party() {
+    let element = document.querySelector('.subscribe');
+    let { top, bottom, left, right } = element.getBoundingClientRect();
 
-let element = document.querySelector('.subscribe')
-
-let { top, bottom, left, right } = element.getBoundingClientRect()
     confetti({
         origin: {            
             x: ((left + right) / 2) / window.innerWidth,
             y: ((top + bottom) / 2) / window.innerHeight
         }
     });
+
+    changeDOMElements();
 }
 
-
 function changeDOMElements() {
-    const email = document.getElementById('mail');
-    console.log(email.value);
-    
+    const subscribe = document.querySelector('.subscribe');
+    const contratulation = document.querySelector('.congratulation');
+    const margin = document.querySelector('.section-ready');
+    let stateDOM = 0;
+    if (stateDOM == 0) {
+        subscribe.style.display = 'none';
+        contratulation.style.display = 'flex';
+        stateDOM = 1;
+    } else { 
+        subscribe.style.display = 'flex';
+        contratulation.style.display = 'none';
+        stateDOM = 0;
+    };
+
+    margin.style.marginBottom = '10px';
 }
 
 function changeDOMcolors() {

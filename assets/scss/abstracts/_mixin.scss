@@ -83,3 +83,19 @@
     font-family: $font-primary-bold;
     color: $color-grey;
 }
+
+@mixin congrats {
+    margin-bottom: $margin-10px;
+    font-family: $font-primary-bold;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+@mixin subtext {
+    font-size: 0.9rem;
+    margin-bottom: $margin-25px;
+}
+
+@mixin button-back-font {
+    font-family: $font-primary-bold;
+    font-weight: 600;
+}
